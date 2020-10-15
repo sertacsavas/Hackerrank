@@ -14,7 +14,6 @@ public class Solution {
 		try {
 			md = MessageDigest.getInstance("MD5");
 		} catch (NoSuchAlgorithmException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		byte[] messageDigest = md.digest(testString.getBytes());
