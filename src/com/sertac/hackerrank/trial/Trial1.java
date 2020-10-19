@@ -22,6 +22,14 @@ public class Trial1 {
 
 		int a = -3;
 		System.out.println(a);
+
+		String s1 = "asd";
+		String s2 = s1;
+
+		s1 = "qwe";
+
+		System.out.println(s1);
+		System.out.println(s2);
 	}
 
 }
