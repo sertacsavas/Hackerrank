@@ -2,6 +2,20 @@ package com.sertac.hackerrank.trial;
 
 import java.math.BigInteger;
 
+class Book {
+	void method() {
+		System.out.println("Book");
+	}
+}
+
+class Novel extends Book {
+
+	@Override
+	void method() {
+		System.out.println("Novel");
+	}
+}
+
 public class Trial1 {
 
 	private static BigInteger factorial(BigInteger a) {
@@ -30,6 +44,15 @@ public class Trial1 {
 
 		System.out.println(s1);
 		System.out.println(s2);
+
+		Novel n = new Novel();
+		n.method();
+
+		Book b = new Novel();
+		b.method();
+
+		Book c = new Book();
+		c.method();
 	}
 
 }
