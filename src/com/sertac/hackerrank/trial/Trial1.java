@@ -53,6 +53,10 @@ public class Trial1 {
 
 		Book c = new Book();
 		c.method();
+
+		Integer i = new Integer(null);
+
+		System.out.println(i);
 	}
 
 }
