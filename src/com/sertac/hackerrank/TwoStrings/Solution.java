@@ -3,13 +3,29 @@ package com.sertac.hackerrank.TwoStrings;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Solution {
 
 	// Complete the twoStrings function below.
 	static String twoStrings(String s1, String s2) {
-		return null;
+		char[] c1 = s1.toCharArray();
+		char[] c2 = s2.toCharArray();
+
+		HashSet<String> set = new HashSet<String>();
+
+		for (int i = 0; i < c1.length; i++) {
+			set.add(String.valueOf(c1[i]));
+		}
+
+		for (int i = 0; i < c2.length; i++) {
+			if (set.contains(String.valueOf(c2[i]))) {
+				return "YES";
+			}
+		}
+
+		return "NO";
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);
