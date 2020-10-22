@@ -54,9 +54,28 @@ public class Trial1 {
 		Book c = new Book();
 		c.method();
 
-		Integer i = new Integer(null);
+		// Integer i = new Integer(null);
 
-		System.out.println(i);
+//		System.out.println(i);
+
+		System.out.println(Math.log(125) / Math.log(5));
+		System.out.println(Math.log(27) / Math.log(3));
+
+		long d = 125;
+		long e = 5;
+
+		int opPow = 0;
+
+		while (d >= e) {
+			d /= e;
+			opPow++;
+		}
+
+		System.out.println(opPow);
+
+		for (int i = 0; i < 0; i++) {
+			System.out.println("asd");
+		}
 	}
 
 }
