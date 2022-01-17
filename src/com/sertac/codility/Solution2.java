@@ -13,7 +13,7 @@ class Solution2 {
 	public static int solution(int[] A) {
 
 		// List<Integer> list = Arrays.stream(A).boxed().collect(Collectors.toList());
-		HashSet<Integer> set = new HashSet<Integer>();
+		HashSet<Integer> set = new HashSet<>();
 		for (int i : A) {
 			set.add(i);
 		}
