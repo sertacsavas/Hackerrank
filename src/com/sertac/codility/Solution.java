@@ -11,30 +11,22 @@ import java.util.stream.Collectors;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
-
+// merge
 class Solution {
 	public static int solution(int[] A) {
-
 		List<Integer> list = Arrays.stream(A).boxed().collect(Collectors.toList());
-
 		Collections.sort(list);
-
 		int checker = 1;
-
 		for (Integer integer : list) {
 			if (integer > 0) {
-
 				if (checker < integer) {
 					return checker;
 				}
-
 				if (checker <= integer) {
 					checker++;
 				}
-
 			}
 		}
-
 		return checker;
 	}
 
