@@ -9,7 +9,7 @@ public class Solution {
 
 	// Complete the maximumSum function below.
 	static long maximumSum(long[] a, long m) {
-
+		return 0;
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);
